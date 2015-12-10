@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="width" secondItem="bpN-oj-ekw" secondAttribute="height" multiplier="1:1" id="7NG-8J-L0Q"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-bA-n50">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clipboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-bA-n50">
                                 <rect key="frame" x="214" y="204" width="173" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="3GN-2b-DFF"/>
