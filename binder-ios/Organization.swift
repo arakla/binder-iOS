@@ -9,6 +9,7 @@
 import Foundation
 
 struct Organization {
+
     var name: String?
     var short_name: String?
     var status: String?

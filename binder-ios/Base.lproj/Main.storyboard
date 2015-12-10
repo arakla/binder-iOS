@@ -160,7 +160,7 @@
         <!--Organizations-->
         <scene sceneID="boB-dC-Sjp">
             <objects>
-                <tableViewController id="zX4-vb-n0v" customClass="OrgSummaryController" customModule="binder_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="zX4-vb-n0v" customClass="OrganizationController" customModule="binder_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VYX-LT-BaK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
