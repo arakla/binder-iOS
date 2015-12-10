@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func OpenBinder(sender: AnyObject) {
+        if let url = NSURL(string: "https://binder.springcarnival.org/") {
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
 
 
 }

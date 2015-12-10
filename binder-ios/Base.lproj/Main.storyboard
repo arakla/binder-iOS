@@ -2,6 +2,10 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eTf-ce-wZb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,18 +20,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SCC Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bpN-oj-ekw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCC Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bpN-oj-ekw">
                                 <rect key="frame" x="237" y="72" width="127" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="127" id="1my-rE-9iV"/>
+                                    <constraint firstAttribute="width" secondItem="bpN-oj-ekw" secondAttribute="height" multiplier="1:1" id="7NG-8J-L0Q"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-GW-9jL">
-                                <rect key="frame" x="80" y="374" width="156" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-bA-n50">
+                                <rect key="frame" x="214" y="204" width="173" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="3GN-2b-DFF"/>
+                                    <constraint firstAttribute="height" constant="47" id="eog-sS-sbn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-GW-9jL">
+                                <rect key="frame" x="222" y="372" width="156" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="Tgd-H0-jFE"/>
+                                    <constraint firstAttribute="height" constant="32" id="Y8p-EZ-vcu"/>
+                                    <constraint firstAttribute="width" constant="156" id="tS3-9f-6Us"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                 <state key="normal" title="Structural Queue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tS3-9f-6Us"/>
+                                    </mask>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-Ja-YQQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-Ja-YQQ">
                                 <rect key="frame" x="235" y="322" width="131" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="4fD-Jr-rks"/>
+                                    <constraint firstAttribute="height" constant="33" id="fhC-vz-dqw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                 <state key="normal" title="Organizations">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,34 +68,88 @@
                                     <segue destination="uZX-aK-ChY" kind="show" id="vcK-Xu-p4V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6b-Fy-fCa">
-                                <rect key="frame" x="360" y="375" width="151" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Electrical Queue">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spring Carnival Committee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgR-6U-1Io">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring Carnival Committee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgR-6U-1Io">
                                 <rect key="frame" x="165" y="259" width="270" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ck0-ja-UJ7"/>
+                                    <constraint firstAttribute="width" constant="270" id="d0W-Br-QqB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyY-eJ-Gi1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyY-eJ-Gi1">
                                 <rect key="frame" x="241" y="550" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="7kO-Of-X1P"/>
+                                    <constraint firstAttribute="height" constant="30" id="9Bs-mL-iGA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Go to Binder">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OpenBinder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C8d-Qu-Nkk"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-bA-n50">
-                                <rect key="frame" x="214" y="204" width="173" height="47"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6b-Fy-fCa">
+                                <rect key="frame" x="225" y="428" width="151" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="0lo-9X-Ihb"/>
+                                    <constraint firstAttribute="height" constant="30" id="7Bu-bT-l1m"/>
+                                    <constraint firstAttribute="width" constant="151" id="bnN-4l-j4n"/>
+                                    <constraint firstAttribute="height" constant="30" id="ctb-IK-KnH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Electrical Queue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0lo-9X-Ihb"/>
+                                        <exclude reference="ctb-IK-KnH"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PgR-6U-1Io" firstAttribute="centerX" secondItem="baH-bA-n50" secondAttribute="centerX" id="2EP-jV-o34"/>
+                            <constraint firstItem="Mf1-GW-9jL" firstAttribute="baseline" secondItem="z6b-Fy-fCa" secondAttribute="firstBaseline" id="62z-GB-0N5"/>
+                            <constraint firstItem="Mf1-GW-9jL" firstAttribute="centerX" secondItem="qfn-Ja-YQQ" secondAttribute="centerX" id="6En-nt-QhR"/>
+                            <constraint firstItem="qfn-Ja-YQQ" firstAttribute="centerX" secondItem="FyY-eJ-Gi1" secondAttribute="centerX" id="LE9-ha-FPj"/>
+                            <constraint firstItem="baH-bA-n50" firstAttribute="top" secondItem="bpN-oj-ekw" secondAttribute="bottom" constant="5" id="LGw-kl-Gpd"/>
+                            <constraint firstAttribute="bottom" secondItem="FyY-eJ-Gi1" secondAttribute="bottom" constant="20" symbolic="YES" id="OgA-Zj-gvg"/>
+                            <constraint firstItem="z6b-Fy-fCa" firstAttribute="top" secondItem="qfn-Ja-YQQ" secondAttribute="bottom" constant="20" id="QO8-Ge-A9x"/>
+                            <constraint firstItem="Mf1-GW-9jL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="QS9-7c-4UG"/>
+                            <constraint firstItem="Mf1-GW-9jL" firstAttribute="top" secondItem="PgR-6U-1Io" secondAttribute="bottom" constant="80" id="QdK-u0-bOj"/>
+                            <constraint firstItem="PgR-6U-1Io" firstAttribute="centerX" secondItem="qfn-Ja-YQQ" secondAttribute="centerX" id="Rer-tc-Tz2"/>
+                            <constraint firstItem="z6b-Fy-fCa" firstAttribute="top" secondItem="Mf1-GW-9jL" secondAttribute="bottom" constant="24" id="SIq-bu-T25"/>
+                            <constraint firstItem="bpN-oj-ekw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="UO1-Jp-b0q"/>
+                            <constraint firstItem="bpN-oj-ekw" firstAttribute="centerX" secondItem="baH-bA-n50" secondAttribute="centerX" id="YVi-mt-ktH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mf1-GW-9jL" secondAttribute="bottom" constant="194" id="aad-rA-EZZ"/>
+                            <constraint firstItem="qfn-Ja-YQQ" firstAttribute="top" secondItem="PgR-6U-1Io" secondAttribute="bottom" constant="28" id="fXH-vR-aKo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z6b-Fy-fCa" secondAttribute="bottom" constant="195" id="j15-XB-2tk"/>
+                            <constraint firstItem="z6b-Fy-fCa" firstAttribute="centerX" secondItem="Mf1-GW-9jL" secondAttribute="centerX" id="lSY-C4-vV0"/>
+                            <constraint firstItem="FyY-eJ-Gi1" firstAttribute="top" secondItem="z6b-Fy-fCa" secondAttribute="bottom" constant="92" id="lkS-7H-asE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z6b-Fy-fCa" secondAttribute="trailing" constant="73" id="nrK-qA-72U"/>
+                            <constraint firstItem="z6b-Fy-fCa" firstAttribute="baseline" secondItem="Mf1-GW-9jL" secondAttribute="firstBaseline" id="rLo-Cx-sGc"/>
+                            <constraint firstItem="PgR-6U-1Io" firstAttribute="top" secondItem="baH-bA-n50" secondAttribute="bottom" constant="8" symbolic="YES" id="vg0-aa-Z1A"/>
+                            <constraint firstItem="qfn-Ja-YQQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDY-e6-zYE"/>
+                            <constraint firstItem="Mf1-GW-9jL" firstAttribute="top" secondItem="qfn-Ja-YQQ" secondAttribute="bottom" constant="17" id="zgO-UE-aAf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="62z-GB-0N5"/>
+                                <exclude reference="QS9-7c-4UG"/>
+                                <exclude reference="QdK-u0-bOj"/>
+                                <exclude reference="QO8-Ge-A9x"/>
+                                <exclude reference="nrK-qA-72U"/>
+                                <exclude reference="rLo-Cx-sGc"/>
+                                <exclude reference="aad-rA-EZZ"/>
+                                <exclude reference="j15-XB-2tk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="lzR-n6-wld"/>
                 </viewController>
