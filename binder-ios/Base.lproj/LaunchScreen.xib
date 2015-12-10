@@ -17,22 +17,43 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SCC Binder" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Notebook" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
                     <rect key="frame" x="20" y="218" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="ui9-dA-dLg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SCC Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nWh-wi-jpN">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SCC Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nWh-wi-jpN">
                     <rect key="frame" x="120" y="73" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="eKc-19-8PD"/>
+                    </constraints>
                 </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spring Carnival Committee" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="d1Q-3A-Cfc">
+                    <rect key="frame" x="20" y="256" width="441" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="I1l-Sd-9h0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="22"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="nWh-wi-jpN" secondAttribute="bottom" constant="17" id="191-pz-sTv"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="nWh-wi-jpN" secondAttribute="centerX" id="5jX-zr-hD0"/>
+                <constraint firstItem="nWh-wi-jpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="73" id="7qH-6j-f4D"/>
+                <constraint firstItem="d1Q-3A-Cfc" firstAttribute="top" secondItem="nWh-wi-jpN" secondAttribute="bottom" constant="55" id="JSZ-GY-Ztf"/>
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="d1Q-3A-Cfc" secondAttribute="leading" id="NtQ-f6-l1v"/>
+                <constraint firstItem="d1Q-3A-Cfc" firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" id="Wqw-dK-B1s"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
             </constraints>
