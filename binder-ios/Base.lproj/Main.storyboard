@@ -326,6 +326,17 @@
                             <constraint firstItem="eHd-42-lK2" firstAttribute="centerX" secondItem="dtK-du-W6L" secondAttribute="centerX" id="zzA-sn-pvs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chair1Label" destination="A39-0i-ibf" id="COn-O8-HnK"/>
+                        <outlet property="chair2Label" destination="dtK-du-W6L" id="ckA-7q-u1D"/>
+                        <outlet property="chair3Label" destination="Kh0-sB-4zr" id="E3a-ec-ahw"/>
+                        <outlet property="nameLabel" destination="DBh-dC-kB0" id="UcJ-1l-HlJ"/>
+                        <outlet property="phone1Label" destination="ixQ-k8-mU0" id="vQW-9h-CHF"/>
+                        <outlet property="phone2Label" destination="eHd-42-lK2" id="5uD-oL-nvi"/>
+                        <outlet property="phone3Label" destination="eVU-rS-qMS" id="tEW-ZW-nMn"/>
+                        <outlet property="shortNameLabel" destination="TXb-3I-XR4" id="ws4-r9-Cwx"/>
+                        <outlet property="statusLabel" destination="xWn-oe-XQb" id="Eum-lA-2sa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGH-Ry-xxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

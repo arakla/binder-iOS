@@ -22,6 +22,7 @@ class OrgDetailController: UIViewController {
     
     // outlets go here
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var shortNameLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var chair1Label: UILabel!
     @IBOutlet weak var phone1Label: UILabel!
@@ -42,6 +43,9 @@ class OrgDetailController: UIViewController {
         if let detail: Organization = self.detailItem {
             if let name = self.nameLabel {
                 name.text = detail.name
+            }
+            if let short_name = self.shortNameLabel {
+                short_name.text = detail.short_name
             }
             if let status = self.statusLabel {
                 status.text = detail.status
