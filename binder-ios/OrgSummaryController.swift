@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrgSummaryController: UIViewController {
+class OrgSummaryController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
