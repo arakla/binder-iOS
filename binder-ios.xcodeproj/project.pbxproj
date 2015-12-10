@@ -17,7 +17,7 @@
 		97EBED2D1C1602F500909BFD /* OrgDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED2C1C1602F500909BFD /* OrgDetailController.swift */; };
 		97EBED2F1C16031900909BFD /* StatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED2E1C16031900909BFD /* StatusController.swift */; };
 		97EBED311C16033200909BFD /* QueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED301C16033200909BFD /* QueueController.swift */; };
-		97EBED331C16036A00909BFD /* OrgSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED321C16036A00909BFD /* OrgSummary.swift */; };
+		97EBED331C16036A00909BFD /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED321C16036A00909BFD /* Organization.swift */; };
 		97EBED371C16039C00909BFD /* OrgDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED361C16039C00909BFD /* OrgDetail.swift */; };
 		97EBED391C1603AA00909BFD /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED381C1603AA00909BFD /* Status.swift */; };
 		97EBED3B1C1603BF00909BFD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED3A1C1603BF00909BFD /* Queue.swift */; };
@@ -48,7 +48,7 @@
 		97EBED2C1C1602F500909BFD /* OrgDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgDetailController.swift; sourceTree = "<group>"; };
 		97EBED2E1C16031900909BFD /* StatusController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusController.swift; sourceTree = "<group>"; };
 		97EBED301C16033200909BFD /* QueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueController.swift; sourceTree = "<group>"; };
-		97EBED321C16036A00909BFD /* OrgSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgSummary.swift; sourceTree = "<group>"; };
+		97EBED321C16036A00909BFD /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		97EBED361C16039C00909BFD /* OrgDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgDetail.swift; sourceTree = "<group>"; };
 		97EBED381C1603AA00909BFD /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		97EBED3A1C1603BF00909BFD /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				977D686E1C15FAE90006656B /* Images.xcassets */,
 				977D68701C15FAE90006656B /* LaunchScreen.xib */,
 				977D68651C15FAE90006656B /* Supporting Files */,
-				97EBED321C16036A00909BFD /* OrgSummary.swift */,
+				97EBED321C16036A00909BFD /* Organization.swift */,
 				97EBED261C16028E00909BFD /* OrgSummaryController.swift */,
 				97EBED361C16039C00909BFD /* OrgDetail.swift */,
 				97EBED2C1C1602F500909BFD /* OrgDetailController.swift */,
@@ -238,7 +238,7 @@
 			files = (
 				97EBED2D1C1602F500909BFD /* OrgDetailController.swift in Sources */,
 				97EBED311C16033200909BFD /* QueueController.swift in Sources */,
-				97EBED331C16036A00909BFD /* OrgSummary.swift in Sources */,
+				97EBED331C16036A00909BFD /* Organization.swift in Sources */,
 				97EBED3B1C1603BF00909BFD /* Queue.swift in Sources */,
 				977D686A1C15FAE90006656B /* ViewController.swift in Sources */,
 				97EBED2F1C16031900909BFD /* StatusController.swift in Sources */,
