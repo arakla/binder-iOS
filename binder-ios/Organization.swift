@@ -23,10 +23,4 @@ struct Organization {
     var chair3: String?
     var phone3: String?
     
-    var chair4: String?
-    var phone4: String?
-    
-    var chair5: String?
-    var phone5: String?
-    
 }
