@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FinesDetailController: UIViewController {
+class OrgDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
