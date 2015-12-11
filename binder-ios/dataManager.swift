@@ -19,6 +19,6 @@ class DataManager {
                 error:&readError) {
                     success(data: data)
             }
-        })
+        }) 
     }
 }
