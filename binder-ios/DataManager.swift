@@ -26,6 +26,26 @@ class DataManager {
         DataManager.getOrgDataFromFileWithSuccess { (data) -> Void in
             var json = JSON(data: data)
             
+            if let organizations = json["organizations"][0]["name"].string {
+                println("Orgs: \(organizations)")
+            }
+            
+//            if let list = json["list"].array {
+//                if let tempK = list[0]["main"]["temp"].double {
+//                    var tempF = (tempK - 273.15) * 1.8000 + 32.00
+//                    println("Temp in K: \(tempK)")
+//                    println("Temp in F: \(tempF)")
+//                }
+//            }
+//            
+//            if let list = json["list"].array {
+//                if let period = list[0]["dt_txt"].string {
+//                    let dateFormatter = NSDateFormatter()
+//                    dateFormatter.dateFormat = ""
+//                    let periodF = dateFormatter.dateFromString(period)
+//                    println("Period: \(periodF)")
+//                }
+//            }
             
 //            var orgObj = map(organization){Organization(name: $0, ship: $1)}
             
