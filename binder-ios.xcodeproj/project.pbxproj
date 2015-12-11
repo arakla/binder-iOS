@@ -13,6 +13,8 @@
 		977D686F1C15FAE90006656B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977D686E1C15FAE90006656B /* Images.xcassets */; };
 		977D68721C15FAE90006656B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 977D68701C15FAE90006656B /* LaunchScreen.xib */; };
 		977D687E1C15FAE90006656B /* binder_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977D687D1C15FAE90006656B /* binder_iosTests.swift */; };
+		97954D5C1C1A481900FFB931 /* organizations.json in Resources */ = {isa = PBXBuildFile; fileRef = 97954D5B1C1A481900FFB931 /* organizations.json */; };
+		97954D5E1C1A50FC00FFB931 /* dataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97954D5D1C1A50FC00FFB931 /* dataManager.swift */; };
 		97EBED271C16028E00909BFD /* OrganizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED261C16028E00909BFD /* OrganizationController.swift */; };
 		97EBED2D1C1602F500909BFD /* OrgDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED2C1C1602F500909BFD /* OrgDetailController.swift */; };
 		97EBED311C16033200909BFD /* QueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED301C16033200909BFD /* QueueController.swift */; };
@@ -41,6 +43,8 @@
 		977D68771C15FAE90006656B /* binder-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "binder-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		977D687C1C15FAE90006656B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		977D687D1C15FAE90006656B /* binder_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binder_iosTests.swift; sourceTree = "<group>"; };
+		97954D5B1C1A481900FFB931 /* organizations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = organizations.json; sourceTree = "<group>"; };
+		97954D5D1C1A50FC00FFB931 /* dataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataManager.swift; sourceTree = "<group>"; };
 		97EBED261C16028E00909BFD /* OrganizationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationController.swift; sourceTree = "<group>"; };
 		97EBED2C1C1602F500909BFD /* OrgDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgDetailController.swift; sourceTree = "<group>"; };
 		97EBED301C16033200909BFD /* QueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		977D68641C15FAE90006656B /* binder-ios */ = {
 			isa = PBXGroup;
 			children = (
+				97954D5B1C1A481900FFB931 /* organizations.json */,
 				977D68671C15FAE90006656B /* AppDelegate.swift */,
 				977D68691C15FAE90006656B /* ViewController.swift */,
 				977D686B1C15FAE90006656B /* Main.storyboard */,
@@ -98,6 +103,7 @@
 				97EBED2C1C1602F500909BFD /* OrgDetailController.swift */,
 				97EBED3A1C1603BF00909BFD /* Queue.swift */,
 				97EBED301C16033200909BFD /* QueueController.swift */,
+				97954D5D1C1A50FC00FFB931 /* dataManager.swift */,
 			);
 			path = "binder-ios";
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			files = (
 				977D686D1C15FAE90006656B /* Main.storyboard in Resources */,
 				977D68721C15FAE90006656B /* LaunchScreen.xib in Resources */,
+				97954D5C1C1A481900FFB931 /* organizations.json in Resources */,
 				977D686F1C15FAE90006656B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97EBED2D1C1602F500909BFD /* OrgDetailController.swift in Sources */,
+				97954D5E1C1A50FC00FFB931 /* dataManager.swift in Sources */,
 				97EBED311C16033200909BFD /* QueueController.swift in Sources */,
 				97EBED331C16036A00909BFD /* Organization.swift in Sources */,
 				97EBED3B1C1603BF00909BFD /* Queue.swift in Sources */,
