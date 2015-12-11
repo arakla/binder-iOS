@@ -21,4 +21,14 @@ class DataManager {
             }
         })
     }
+    
+    class func getOrgData() {
+        DataManager.getOrgDataFromFileWithSuccess { (data) -> Void in
+            var json = JSON(data: data)
+            
+            
+//            var orgObj = map(organization){Organization(name: $0, ship: $1)}
+            
+        }
+    }
 }

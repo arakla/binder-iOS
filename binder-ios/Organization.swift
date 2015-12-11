@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Organization {
+class Organization {
 
     var name: String?
     var short_name: String?
