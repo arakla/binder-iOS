@@ -16,6 +16,7 @@
 		97954D5C1C1A481900FFB931 /* organizations.json in Resources */ = {isa = PBXBuildFile; fileRef = 97954D5B1C1A481900FFB931 /* organizations.json */; };
 		97954D601C1A520500FFB931 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97954D5F1C1A520500FFB931 /* SwiftyJSON.swift */; };
 		97954D641C1A536200FFB931 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97954D631C1A536200FFB931 /* DataManager.swift */; };
+		97954D681C1A659A00FFB931 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 97954D671C1A659A00FFB931 /* forecast.json */; };
 		97EBED271C16028E00909BFD /* OrganizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED261C16028E00909BFD /* OrganizationController.swift */; };
 		97EBED2D1C1602F500909BFD /* OrgDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED2C1C1602F500909BFD /* OrgDetailController.swift */; };
 		97EBED311C16033200909BFD /* QueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED301C16033200909BFD /* QueueController.swift */; };
@@ -47,6 +48,7 @@
 		97954D5B1C1A481900FFB931 /* organizations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = organizations.json; sourceTree = "<group>"; };
 		97954D5F1C1A520500FFB931 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		97954D631C1A536200FFB931 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		97954D671C1A659A00FFB931 /* forecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
 		97EBED261C16028E00909BFD /* OrganizationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationController.swift; sourceTree = "<group>"; };
 		97EBED2C1C1602F500909BFD /* OrgDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgDetailController.swift; sourceTree = "<group>"; };
 		97EBED301C16033200909BFD /* QueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				977D68651C15FAE90006656B /* Supporting Files */,
 				97EBED321C16036A00909BFD /* Organization.swift */,
 				97EBED261C16028E00909BFD /* OrganizationController.swift */,
+				97954D671C1A659A00FFB931 /* forecast.json */,
 				97EBED2C1C1602F500909BFD /* OrgDetailController.swift */,
 				97EBED3A1C1603BF00909BFD /* Queue.swift */,
 				97EBED301C16033200909BFD /* QueueController.swift */,
@@ -218,6 +221,7 @@
 			files = (
 				977D686D1C15FAE90006656B /* Main.storyboard in Resources */,
 				977D68721C15FAE90006656B /* LaunchScreen.xib in Resources */,
+				97954D681C1A659A00FFB931 /* forecast.json in Resources */,
 				97954D5C1C1A481900FFB931 /* organizations.json in Resources */,
 				977D686F1C15FAE90006656B /* Images.xcassets in Resources */,
 			);
