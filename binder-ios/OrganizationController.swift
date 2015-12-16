@@ -10,6 +10,7 @@ import UIKit
 
 class OrganizationController: UITableViewController {
     
+    let dataManager = DataManager()
     var organizations = [Organization]()
     
     override func awakeFromNib() {
@@ -17,6 +18,11 @@ class OrganizationController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataManager.loadOrgData()
+        let orgs = dataManager.organizations.isEmpty
+        if !orgs {
+            organizations = dataManager.organizations
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     

@@ -13,20 +13,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    let dataManager = DataManager()
-    
-    func loadData() {
-        dataManager.loadOrgData()
-        let navigationController = window!.rootViewController as! UINavigationController
-        let organizationController = navigationController.viewControllers[0] as! OrganizationController
-        if !dataManager.organizations.isEmpty {
-            organizationController.organizations = dataManager.organizations
-        }
+//    func loadData() {
+//        dataManager.loadOrgData()
+//        let navigationController = window!.rootViewController as! UINavigationController
+//        let viewController = navigationController.viewControllers[0] as! ViewController
+//        let organizationController = viewController.navigationController?.viewControllers[0] as! OrganizationController
+//        if !dataManager.organizations.isEmpty {
+//            organizationController.organizations = dataManager.organizations
+//        }
+//    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        loadData()
         return true
     }
 

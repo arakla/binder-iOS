@@ -44,6 +44,7 @@ class DataManager {
             
             println("\nSwiftyJSON\n")
             println(json["organizations"])
+            println(json["organizations"].count)
             if let orgName = json["organizations"][0]["name"].string {
                 println("OrgName: \(orgName)")
             }
