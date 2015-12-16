@@ -34,4 +34,34 @@ class DataManager {
             }
         })
     }
+    
+    class func loadOrgData() {
+        DataManager.getOrgDataFromFileWithSuccess { (data) -> Void in
+            var json = JSON(data: data)
+            
+            println("\nSwiftyJSON\n")
+            println(json["organizations"])
+            if let orgName = json["organizations"][0]["name"].string {
+                println("OrgName: \(orgName)")
+            }
+            
+            if let orgShort = json["organizations"][0]["short_name"].string {
+                println("OrgShort: \(orgShort)")
+            }
+            
+            if let orgCat = json["organizations"][0]["category"].string {
+                println("OrgCat: \(orgCat)")
+            }
+            
+            if let chairName = json["organizations"][0]["booth_chairs"][0]["cached_name"].string {
+                println("chairName: \(chairName)")
+            }
+            
+            if let chairPhone = json["organizations"][0]["booth_chairs"][0]["phone_number"].string {
+                println("chairPhone: \(chairPhone)")
+            }
+            
+            println("\nEndSwiftyJSON\n")
+        }
+    }
 }
