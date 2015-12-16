@@ -9,6 +9,9 @@
 import Foundation
 
 class DataManager {
+    
+    var organizations = [Organization]()
+    
     class func getOrgDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             let filePath = NSBundle.mainBundle().pathForResource("organizations",ofType:"json")
@@ -35,7 +38,7 @@ class DataManager {
         })
     }
     
-    class func loadOrgData() {
+    func loadOrgData() {
         DataManager.getOrgDataFromFileWithSuccess { (data) -> Void in
             var json = JSON(data: data)
             
