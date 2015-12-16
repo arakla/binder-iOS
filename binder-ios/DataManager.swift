@@ -43,26 +43,60 @@ class DataManager {
             var json = JSON(data: data)
             
             println("\nSwiftyJSON\n")
-            println(json["organizations"])
+//            println(json["organizations"])
             println(json["organizations"].count)
-            if let orgName = json["organizations"][0]["name"].string {
-                println("OrgName: \(orgName)")
-            }
             
-            if let orgShort = json["organizations"][0]["short_name"].string {
-                println("OrgShort: \(orgShort)")
-            }
-            
-            if let orgCat = json["organizations"][0]["category"].string {
-                println("OrgCat: \(orgCat)")
-            }
-            
-            if let chairName = json["organizations"][0]["booth_chairs"][0]["cached_name"].string {
-                println("chairName: \(chairName)")
-            }
-            
-            if let chairPhone = json["organizations"][0]["booth_chairs"][0]["phone_number"].string {
-                println("chairPhone: \(chairPhone)")
+            for var i = 0; i < json["organizations"].count; i++ {
+                
+                self.organizations.append(Organization())
+                
+                println("Org Count: \(self.organizations.count)")
+                
+                println("OrgNumber: \(i)")
+                if let orgName = json["organizations"][i]["name"].string {
+                    println("OrgName: \(orgName)")
+                    self.organizations[i].name = orgName
+                }
+                
+                if let orgShort = json["organizations"][i]["short_name"].string {
+                    println("OrgShort: \(orgShort)")
+                    self.organizations[i].short_name = orgShort
+                }
+                
+                if let orgCat = json["organizations"][i]["category"].string {
+                    println("OrgCat: \(orgCat)")
+                    self.organizations[i].category = orgCat
+                }
+                
+                if let chairName1 = json["organizations"][i]["booth_chairs"][0]["cached_name"].string {
+                    println("chairName1: \(chairName1)")
+                    self.organizations[i].chair1 = chairName1
+                }
+                
+                if let chairPhone1 = json["organizations"][i]["booth_chairs"][0]["phone_number"].string {
+                    println("chairPhone1: \(chairPhone1)")
+                    self.organizations[i].phone1 = chairPhone1
+                }
+                
+                if let chairName2 = json["organizations"][i]["booth_chairs"][1]["cached_name"].string {
+                    println("chairName2: \(chairName2)")
+                    self.organizations[i].chair2 = chairName2
+                }
+                
+                if let chairPhone2 = json["organizations"][i]["booth_chairs"][1]["phone_number"].string {
+                    println("chairPhone2: \(chairPhone2)")
+                    self.organizations[i].phone2 = chairPhone2
+                }
+                
+                if let chairName3 = json["organizations"][i]["booth_chairs"][2]["cached_name"].string {
+                    println("chairName3: \(chairName3)")
+                    self.organizations[i].chair3 = chairName3
+                }
+                
+                if let chairPhone3 = json["organizations"][i]["booth_chairs"][2]["phone_number"].string {
+                    println("chairPhone3: \(chairPhone3)")
+                    self.organizations[i].phone3 = chairPhone3
+                }
             }
             
             println("\nEndSwiftyJSON\n")

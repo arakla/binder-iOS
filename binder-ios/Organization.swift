@@ -11,16 +11,17 @@ import Foundation
 class Organization {
 
     var name: String?
-    var short_name: String?
-    var status: String?
+    var category: String?
+    var short_name: String? = ""
+    var status: String? = ""
     
-    var chair1: String?
-    var phone1: String?
+    var chair1: String? = ""
+    var phone1: String? = ""
     
-    var chair2: String?
-    var phone2: String?
+    var chair2: String? = ""
+    var phone2: String? = ""
     
-    var chair3: String?
-    var phone3: String?
+    var chair3: String? = ""
+    var phone3: String? = ""
     
 }
