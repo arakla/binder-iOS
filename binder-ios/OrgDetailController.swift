@@ -23,7 +23,9 @@ class OrgDetailController: UIViewController {
     // outlets go here
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var shortNameLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
+    
     @IBOutlet weak var chair1Label: UILabel!
     @IBOutlet weak var phone1Label: UILabel!
     @IBOutlet weak var chair2Label: UILabel!
