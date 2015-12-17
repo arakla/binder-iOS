@@ -53,6 +53,9 @@
                                         <exclude reference="tS3-9f-6Us"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="vOc-KG-tK6" kind="show" id="xHi-XL-VIi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-Ja-YQQ">
                                 <rect key="frame" x="235" y="322" width="131" height="33"/>
@@ -110,6 +113,9 @@
                                         <exclude reference="ctb-IK-KnH"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="vOc-KG-tK6" kind="show" id="IUU-dD-sXm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -399,8 +405,56 @@
             </objects>
             <point key="canvasLocation" x="1821" y="387"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="5FO-JT-mg5">
+            <objects>
+                <tableViewController id="Cwc-Du-kPF" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="35B-SD-E7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wdA-Tc-Zdn">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdA-Tc-Zdn" id="SBt-g3-ZCV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cwc-Du-kPF" id="lhk-Fg-EPu"/>
+                            <outlet property="delegate" destination="Cwc-Du-kPF" id="4D4-Yg-JMp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NXZ-KO-cCT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfE-A0-5pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="1102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iUT-rW-h3b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vOc-KG-tK6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zOy-5F-eih">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cwc-Du-kPF" kind="relationship" relationship="rootViewController" id="JHe-bu-5Em"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1q-iE-gd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1137" y="1102"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SCC Logo" width="1000" height="1000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xHi-XL-VIi"/>
+    </inferredMetricsTieBreakers>
 </document>

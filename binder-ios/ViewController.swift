@@ -25,6 +25,26 @@ class ViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url)
         }
     }
+    
+    // MARK: - Segues
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        println("In prep for seg")
+        if segue.identifier == "electrical" {
+            println("In electrical")
+            if let destination = segue.destinationViewController as? QueueController {
+                println("In destVC \(destination.description)")
+                    destination.queueType = 1
+            }
+        } else if segue.identifier == "structural" {
+            println("In electrical")
+            if let destination = segue.destinationViewController as? QueueController {
+                println("In destVC \(destination.description)")
+                destination.queueType = 2
+            }
+        }
+        
+    }
 
 
 }

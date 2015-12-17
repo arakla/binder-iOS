@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Queue {
+    
+    var binder_id: Int?
+    var name: String?
+    var org_id: Int?
+    
+    var start: NSDate?
+    
+}
