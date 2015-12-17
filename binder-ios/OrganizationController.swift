@@ -100,6 +100,10 @@ class OrganizationController: UITableViewController {
             var json = JSON(data: data)
             for var i = 0; i < json["organizations"].count; i++ {
                 self.organizations.append(Organization())
+                
+                if let id = json["organizations"][i]["id"].int {
+                    self.organizations[i].binder_id = id
+                }
 
                 if let orgName = json["organizations"][i]["name"].string {
                     self.organizations[i].name = orgName

@@ -65,9 +65,15 @@ class DataManager {
 ////                println("Org Count: \(self.organizations.count)")
 //                
 ////                println("OrgNumber: \(i)")
+//
 //                if let orgName = json["organizations"][i]["name"].string {
 ////                    println("OrgName: \(orgName)")
 //                    self.organizations[i].name = orgName
+//                }
+//
+//                if let id = json["organizations"][i]["name"].int {
+////                    println("Binder ID: \(id)")
+//                    self.organizations[i].binder_id = id
 //                }
 //                
 //                if let orgShort = json["organizations"][i]["short_name"].string {
