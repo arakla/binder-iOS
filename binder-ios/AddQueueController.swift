@@ -13,7 +13,7 @@ protocol AddQueueControllerDelegate: class {
     func addQueueController(controller: AddQueueController, didFinishAddingQueue: Queue)
 }
 
-class AddQueueController: UITableViewController, UIPickerViewDataSource {
+class AddQueueController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var organizations = [Organization]() //orgs from orgsCtrl
     var orgSelected:String?
@@ -31,7 +31,7 @@ class AddQueueController: UITableViewController, UIPickerViewDataSource {
     
     @IBAction func done() {
         var queue = Queue()
-        queue.name = orgSelected
+        queue.name = orgSelected!
         queue.start = NSDate()
         delegate?.addQueueController(self, didFinishAddingQueue: queue)
     }
@@ -40,16 +40,12 @@ class AddQueueController: UITableViewController, UIPickerViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        pickerView.becomeFirstResponder()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadOrgData()
         pickerView = UIPickerView()
-        pickerView.dataSource = self
-        pickerView.center = view.center
-        view.addSubview(pickerView)
     }
     
     // MARK - PickerView
@@ -63,13 +59,15 @@ class AddQueueController: UITableViewController, UIPickerViewDataSource {
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-            return organizations[row].short_name
+            return organizations[row].name
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        println("\(organizations[row].short_name) was selected")
-        orgSelected = organizations[row].short_name
-        doneBarButton.enabled = (orgSelected != nil)
+        if let org = organizations[row].name {
+            orgSelected = org
+            println("\(orgSelected!) was selected")
+            doneBarButton.enabled = (orgSelected != nil)
+        }
     }
     
     // MARK - Load Orgs

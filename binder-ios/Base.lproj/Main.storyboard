@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SCC Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bpN-oj-ekw">
                                 <rect key="frame" x="237" y="72" width="127" height="127"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="kF5-G7-iYa"/>
+                                    <constraint firstAttribute="width" secondItem="bpN-oj-ekw" secondAttribute="height" multiplier="1:1" id="hWw-O4-Y66"/>
+                                    <constraint firstAttribute="width" priority="750" constant="127" id="kF5-G7-iYa"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clipboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-bA-n50">
@@ -440,6 +442,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="dKu-Ep-Qcy" id="sNs-9d-o9X"/>
+                        <outlet property="pickerView" destination="Urv-E5-jmE" id="sal-cq-4WO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPH-Ji-92F" userLabel="First Responder" sceneMemberID="firstResponder"/>
