@@ -11,7 +11,8 @@ import Foundation
 class DataManager {
     
     var organizations = [Organization]()
-    
+
+//  async version of file read in, doesn't work properly with current app design
 //    class func getOrgDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
 //        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
 //            let filePath = NSBundle.mainBundle().pathForResource("organizations",ofType:"json")
