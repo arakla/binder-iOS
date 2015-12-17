@@ -405,10 +405,10 @@
             </objects>
             <point key="canvasLocation" x="1821" y="387"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Queue-->
         <scene sceneID="5FO-JT-mg5">
             <objects>
-                <tableViewController id="Cwc-Du-kPF" sceneMemberID="viewController">
+                <tableViewController id="Cwc-Du-kPF" customClass="QueueController" customModule="binder_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="35B-SD-E7Y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -426,7 +426,7 @@
                             <outlet property="delegate" destination="Cwc-Du-kPF" id="4D4-Yg-JMp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NXZ-KO-cCT"/>
+                    <navigationItem key="navigationItem" title="Queue" id="NXZ-KO-cCT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfE-A0-5pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

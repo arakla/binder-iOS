@@ -58,6 +58,24 @@ class QueueController: UITableViewController {
         }
     }
     
+    // MARK - Delegate Methods
+    
+    func addQueueControllerDidCancel(controller: AddQueueController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func addQueueController(controller: AddQueueController, didFinishAddingQueue entry: Queue) {
+        let newRowIndex = queue.count
+        
+        queue.append(entry)
+        
+        let indexPath = NSIndexPath(forRow: newRowIndex, inSection: 0)
+        let indexPaths = [indexPath]
+        tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
 }
 

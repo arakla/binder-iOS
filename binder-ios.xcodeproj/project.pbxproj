@@ -17,6 +17,7 @@
 		97954D601C1A520500FFB931 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97954D5F1C1A520500FFB931 /* SwiftyJSON.swift */; };
 		97954D641C1A536200FFB931 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97954D631C1A536200FFB931 /* DataManager.swift */; };
 		97A6D8451C2274EF00FC200E /* QueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6D8441C2274EF00FC200E /* QueueController.swift */; };
+		97A6D8471C2275A500FC200E /* AddQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6D8461C2275A500FC200E /* AddQueueController.swift */; };
 		97EBED271C16028E00909BFD /* OrganizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED261C16028E00909BFD /* OrganizationController.swift */; };
 		97EBED2D1C1602F500909BFD /* OrgDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED2C1C1602F500909BFD /* OrgDetailController.swift */; };
 		97EBED331C16036A00909BFD /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBED321C16036A00909BFD /* Organization.swift */; };
@@ -48,6 +49,7 @@
 		97954D5F1C1A520500FFB931 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		97954D631C1A536200FFB931 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		97A6D8441C2274EF00FC200E /* QueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueController.swift; sourceTree = "<group>"; };
+		97A6D8461C2275A500FC200E /* AddQueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQueueController.swift; sourceTree = "<group>"; };
 		97EBED261C16028E00909BFD /* OrganizationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationController.swift; sourceTree = "<group>"; };
 		97EBED2C1C1602F500909BFD /* OrgDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrgDetailController.swift; sourceTree = "<group>"; };
 		97EBED321C16036A00909BFD /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				97EBED3A1C1603BF00909BFD /* Queue.swift */,
 				97A6D8441C2274EF00FC200E /* QueueController.swift */,
 				97954D631C1A536200FFB931 /* DataManager.swift */,
+				97A6D8461C2275A500FC200E /* AddQueueController.swift */,
 			);
 			path = "binder-ios";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				977D68681C15FAE90006656B /* AppDelegate.swift in Sources */,
 				97954D641C1A536200FFB931 /* DataManager.swift in Sources */,
 				97EBED271C16028E00909BFD /* OrganizationController.swift in Sources */,
+				97A6D8471C2275A500FC200E /* AddQueueController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

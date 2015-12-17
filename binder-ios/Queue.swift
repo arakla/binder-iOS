@@ -13,6 +13,7 @@ class Queue {
     var binder_id: Int?
     var name: String?
     var org_id: Int?
+    var type: Int?
     
     var start: NSDate?
     
