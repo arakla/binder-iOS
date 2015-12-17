@@ -166,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="srV-20-f1E" style="IBUITableViewCellStyleDefault" id="yGJ-8I-vdk">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="srV-20-f1E" style="IBUITableViewCellStyleDefault" id="yGJ-8I-vdk">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yGJ-8I-vdk" id="dE2-IQ-xpy">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -185,7 +185,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="zX4-vb-n0v" id="uNj-xA-Vvb"/>
+                            <outlet property="dataSource" destination="zX4-vb-n0v" id="s7T-Sk-6BO"/>
                             <outlet property="delegate" destination="zX4-vb-n0v" id="2qg-hi-Fng"/>
                         </connections>
                     </tableView>
