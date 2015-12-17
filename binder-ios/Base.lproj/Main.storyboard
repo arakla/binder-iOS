@@ -37,24 +37,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-GW-9jL">
-                                <rect key="frame" x="222" y="372" width="156" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jix-T5-xjo">
+                                <rect key="frame" x="212" y="363" width="176" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="Tgd-H0-jFE"/>
-                                    <constraint firstAttribute="height" constant="32" id="Y8p-EZ-vcu"/>
-                                    <constraint firstAttribute="width" constant="156" id="tS3-9f-6Us"/>
+                                    <constraint firstAttribute="width" constant="156" id="S7L-HZ-dfr"/>
+                                    <constraint firstAttribute="height" constant="32" id="X9X-XK-Rgc"/>
+                                    <constraint firstAttribute="width" constant="156" id="db5-Je-bJa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Structural Queue">
+                                <state key="normal" title="Combined Queue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="tS3-9f-6Us"/>
+                                        <exclude reference="S7L-HZ-dfr"/>
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="vOc-KG-tK6" kind="show" identifier="structural" id="xHi-XL-VIi"/>
+                                    <segue destination="vOc-KG-tK6" kind="show" identifier="combined" id="eRk-iD-uUD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-Ja-YQQ">
@@ -95,8 +95,28 @@
                                     <action selector="OpenBinder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C8d-Qu-Nkk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6b-Fy-fCa">
-                                <rect key="frame" x="225" y="428" width="151" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf1-GW-9jL">
+                                <rect key="frame" x="222" y="423" width="156" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="Tgd-H0-jFE"/>
+                                    <constraint firstAttribute="height" constant="32" id="Y8p-EZ-vcu"/>
+                                    <constraint firstAttribute="width" constant="156" id="tS3-9f-6Us"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Structural Queue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tS3-9f-6Us"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="vOc-KG-tK6" kind="show" identifier="structural" id="xHi-XL-VIi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6b-Fy-fCa">
+                                <rect key="frame" x="225" y="457" width="151" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="151" id="0lo-9X-Ihb"/>
                                     <constraint firstAttribute="height" constant="30" id="7Bu-bT-l1m"/>
@@ -123,25 +143,27 @@
                             <constraint firstItem="PgR-6U-1Io" firstAttribute="centerX" secondItem="baH-bA-n50" secondAttribute="centerX" id="2EP-jV-o34"/>
                             <constraint firstItem="Mf1-GW-9jL" firstAttribute="baseline" secondItem="z6b-Fy-fCa" secondAttribute="firstBaseline" id="62z-GB-0N5"/>
                             <constraint firstItem="Mf1-GW-9jL" firstAttribute="centerX" secondItem="qfn-Ja-YQQ" secondAttribute="centerX" id="6En-nt-QhR"/>
+                            <constraint firstAttribute="bottom" secondItem="FyY-eJ-Gi1" secondAttribute="bottom" constant="20" symbolic="YES" id="H7Z-Kz-Rz0"/>
                             <constraint firstItem="qfn-Ja-YQQ" firstAttribute="centerX" secondItem="FyY-eJ-Gi1" secondAttribute="centerX" id="LE9-ha-FPj"/>
                             <constraint firstItem="baH-bA-n50" firstAttribute="top" secondItem="bpN-oj-ekw" secondAttribute="bottom" constant="5" id="LGw-kl-Gpd"/>
-                            <constraint firstAttribute="bottom" secondItem="FyY-eJ-Gi1" secondAttribute="bottom" constant="20" symbolic="YES" id="OgA-Zj-gvg"/>
                             <constraint firstItem="z6b-Fy-fCa" firstAttribute="top" secondItem="qfn-Ja-YQQ" secondAttribute="bottom" constant="20" id="QO8-Ge-A9x"/>
                             <constraint firstItem="Mf1-GW-9jL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="QS9-7c-4UG"/>
                             <constraint firstItem="Mf1-GW-9jL" firstAttribute="top" secondItem="PgR-6U-1Io" secondAttribute="bottom" constant="80" id="QdK-u0-bOj"/>
                             <constraint firstItem="PgR-6U-1Io" firstAttribute="centerX" secondItem="qfn-Ja-YQQ" secondAttribute="centerX" id="Rer-tc-Tz2"/>
                             <constraint firstItem="z6b-Fy-fCa" firstAttribute="top" secondItem="Mf1-GW-9jL" secondAttribute="bottom" constant="24" id="SIq-bu-T25"/>
                             <constraint firstItem="bpN-oj-ekw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="UO1-Jp-b0q"/>
+                            <constraint firstItem="Jix-T5-xjo" firstAttribute="top" secondItem="qfn-Ja-YQQ" secondAttribute="bottom" constant="8" symbolic="YES" id="VQV-D1-ceW"/>
+                            <constraint firstItem="PgR-6U-1Io" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wd5-Yp-y9N"/>
                             <constraint firstItem="bpN-oj-ekw" firstAttribute="centerX" secondItem="baH-bA-n50" secondAttribute="centerX" id="YVi-mt-ktH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mf1-GW-9jL" secondAttribute="bottom" constant="194" id="aad-rA-EZZ"/>
                             <constraint firstItem="qfn-Ja-YQQ" firstAttribute="top" secondItem="PgR-6U-1Io" secondAttribute="bottom" constant="28" id="fXH-vR-aKo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z6b-Fy-fCa" secondAttribute="bottom" constant="195" id="j15-XB-2tk"/>
+                            <constraint firstItem="Jix-T5-xjo" firstAttribute="centerX" secondItem="qfn-Ja-YQQ" secondAttribute="centerX" id="jdG-Gn-PIL"/>
                             <constraint firstItem="z6b-Fy-fCa" firstAttribute="centerX" secondItem="Mf1-GW-9jL" secondAttribute="centerX" id="lSY-C4-vV0"/>
                             <constraint firstItem="FyY-eJ-Gi1" firstAttribute="top" secondItem="z6b-Fy-fCa" secondAttribute="bottom" constant="92" id="lkS-7H-asE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="z6b-Fy-fCa" secondAttribute="trailing" constant="73" id="nrK-qA-72U"/>
                             <constraint firstItem="z6b-Fy-fCa" firstAttribute="baseline" secondItem="Mf1-GW-9jL" secondAttribute="firstBaseline" id="rLo-Cx-sGc"/>
                             <constraint firstItem="PgR-6U-1Io" firstAttribute="top" secondItem="baH-bA-n50" secondAttribute="bottom" constant="8" symbolic="YES" id="vg0-aa-Z1A"/>
-                            <constraint firstItem="qfn-Ja-YQQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDY-e6-zYE"/>
                             <constraint firstItem="Mf1-GW-9jL" firstAttribute="top" secondItem="qfn-Ja-YQQ" secondAttribute="bottom" constant="17" id="zgO-UE-aAf"/>
                         </constraints>
                         <variation key="default">
@@ -387,8 +409,8 @@
                                     <outlet property="delegate" destination="cR8-Uf-KfK" id="QKv-oZ-iJD"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the Org to add to the Queue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufk-Bp-dcW">
-                                <rect key="frame" x="113" y="123" width="374" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select the Org to add to the Queue" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufk-Bp-dcW">
+                                <rect key="frame" x="113" y="123" width="374" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="qtF-DW-EIz"/>
                                 </constraints>
@@ -461,7 +483,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="MZ7-N2-9mm" style="IBUITableViewCellStyleDefault" id="wdA-Tc-Zdn">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="MZ7-N2-9mm" style="IBUITableViewCellStyleDefault" id="wdA-Tc-Zdn">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdA-Tc-Zdn" id="SBt-g3-ZCV">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -534,6 +556,6 @@
         <image name="SCC Logo" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IUU-dD-sXm"/>
+        <segue reference="eRk-iD-uUD"/>
     </inferredMetricsTieBreakers>
 </document>

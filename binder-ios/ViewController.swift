@@ -42,6 +42,12 @@ class ViewController: UIViewController {
                 println("In destVC \(destination.description)")
                 destination.queueType = 2
             }
+        } else if segue.identifier == "combined" {
+            println("In Combined")
+            if let destination = segue.destinationViewController as? QueueController {
+                println("In destVC \(destination.description)")
+                destination.queueType = 0
+            }
         }
         
     }

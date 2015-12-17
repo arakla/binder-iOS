@@ -40,12 +40,12 @@ class AddQueueController: UITableViewController, UIPickerViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        loadOrgData()
         pickerView.becomeFirstResponder()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadOrgData()
         pickerView = UIPickerView()
         pickerView.dataSource = self
         pickerView.center = view.center
