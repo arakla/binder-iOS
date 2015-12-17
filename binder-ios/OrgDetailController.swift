@@ -43,6 +43,19 @@ class OrgDetailController: UIViewController {
         }
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        for touch: AnyObject in touches {
+            let location = touch.locationInView(self.view)
+            if CGRectContainsPoint(phone1Label.frame, location) {
+                UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phone1Label.text)")!)
+            } else if CGRectContainsPoint(phone2Label.frame, location) {
+                UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phone2Label.text)")!)
+            } else if CGRectContainsPoint(phone3Label.frame, location) {
+                UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phone3Label.text)")!)
+            }
+        }
+    }
+    
     @IBAction func callButton1(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phone1Label.text)")!)
     }
