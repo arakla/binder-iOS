@@ -15,7 +15,7 @@ protocol AddQueueControllerDelegate: class {
 
 class AddQueueController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var organizations = [Organization]() //orgs from orgsCtrl
+    var organizations = [Organization]() //replace with orgs from orgsCtrl
     var orgSelected:String?
     
     // MARK - IB

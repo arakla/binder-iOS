@@ -97,18 +97,18 @@
 			children = (
 				97954D5F1C1A520500FFB931 /* SwiftyJSON.swift */,
 				97954D5B1C1A481900FFB931 /* organizations.json */,
+				97954D631C1A536200FFB931 /* DataManager.swift */,
+				977D68701C15FAE90006656B /* LaunchScreen.xib */,
+				977D686B1C15FAE90006656B /* Main.storyboard */,
 				977D68671C15FAE90006656B /* AppDelegate.swift */,
 				977D68691C15FAE90006656B /* ViewController.swift */,
-				977D686B1C15FAE90006656B /* Main.storyboard */,
 				977D686E1C15FAE90006656B /* Images.xcassets */,
-				977D68701C15FAE90006656B /* LaunchScreen.xib */,
 				977D68651C15FAE90006656B /* Supporting Files */,
 				97EBED321C16036A00909BFD /* Organization.swift */,
 				97EBED261C16028E00909BFD /* OrganizationController.swift */,
 				97EBED2C1C1602F500909BFD /* OrgDetailController.swift */,
 				97EBED3A1C1603BF00909BFD /* Queue.swift */,
 				97A6D8441C2274EF00FC200E /* QueueController.swift */,
-				97954D631C1A536200FFB931 /* DataManager.swift */,
 				97A6D8461C2275A500FC200E /* AddQueueController.swift */,
 			);
 			path = "binder-ios";
