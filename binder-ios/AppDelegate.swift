@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+//    let dataManager = DataManager()
 //    func loadData() {
 //        dataManager.loadOrgData()
 //        let navigationController = window!.rootViewController as! UINavigationController
@@ -26,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+//        loadData()
         return true
     }
 
