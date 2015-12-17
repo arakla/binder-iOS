@@ -54,7 +54,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="vOc-KG-tK6" kind="show" id="xHi-XL-VIi"/>
+                                    <segue destination="vOc-KG-tK6" kind="show" identifier="structural" id="xHi-XL-VIi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-Ja-YQQ">
@@ -114,7 +114,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="vOc-KG-tK6" kind="show" id="IUU-dD-sXm"/>
+                                    <segue destination="vOc-KG-tK6" kind="show" identifier="electrical" id="IUU-dD-sXm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="2507" y="387"/>
         </scene>
-        <!--Org Detail Controller-->
+        <!--Organization Detail-->
         <scene sceneID="cvE-gn-8FN">
             <objects>
-                <viewController id="DP2-23-kBv" customClass="OrgDetailController" customModule="binder_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Organization Detail" id="DP2-23-kBv" customClass="OrgDetailController" customModule="binder_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="viY-B8-KO4"/>
                         <viewControllerLayoutGuide type="bottom" id="hNq-CE-HFj"/>
@@ -369,6 +369,53 @@
             </objects>
             <point key="canvasLocation" x="3171" y="387"/>
         </scene>
+        <!--Add to Queue-->
+        <scene sceneID="Lrm-nX-swK">
+            <objects>
+                <viewController id="cR8-Uf-KfK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ziy-J9-Ulr"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZE-lK-pEg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wI8-Qu-4Sq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Urv-E5-jmE">
+                                <rect key="frame" x="0.0" y="230" width="600" height="162"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cR8-Uf-KfK" id="QKv-oZ-iJD"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the Org to add to the Queue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufk-Bp-dcW">
+                                <rect key="frame" x="113" y="123" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qtF-DW-EIz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ufk-Bp-dcW" firstAttribute="leading" secondItem="wI8-Qu-4Sq" secondAttribute="leadingMargin" constant="97" id="HaH-HO-mFq"/>
+                            <constraint firstItem="Ufk-Bp-dcW" firstAttribute="top" secondItem="Ziy-J9-Ulr" secondAttribute="bottom" constant="59" id="S5k-da-kBi"/>
+                            <constraint firstItem="Urv-E5-jmE" firstAttribute="centerX" secondItem="Ufk-Bp-dcW" secondAttribute="centerX" id="WN9-PE-p1E"/>
+                            <constraint firstItem="Urv-E5-jmE" firstAttribute="top" secondItem="Ufk-Bp-dcW" secondAttribute="bottom" constant="63" id="d93-EP-0ty"/>
+                            <constraint firstAttribute="trailing" secondItem="Urv-E5-jmE" secondAttribute="trailing" id="gFI-N6-U8J"/>
+                            <constraint firstItem="Urv-E5-jmE" firstAttribute="leading" secondItem="wI8-Qu-4Sq" secondAttribute="leading" id="n6e-hD-M2H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add to Queue" id="WtW-5m-6yk">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iTc-Gz-CNa"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dKu-Ep-Qcy"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPH-Ji-92F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3171" y="1102"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="fSY-yb-xHl">
             <objects>
@@ -414,10 +461,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wdA-Tc-Zdn">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="MZ7-N2-9mm" style="IBUITableViewCellStyleDefault" id="wdA-Tc-Zdn">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdA-Tc-Zdn" id="SBt-g3-ZCV">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MZ7-N2-9mm">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -426,7 +481,13 @@
                             <outlet property="delegate" destination="Cwc-Du-kPF" id="4D4-Yg-JMp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Queue" id="NXZ-KO-cCT"/>
+                    <navigationItem key="navigationItem" title="Queue" id="NXZ-KO-cCT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ly2-4L-Uh2">
+                            <connections>
+                                <segue destination="mYU-nN-nxQ" kind="presentation" id="xC1-89-ePQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfE-A0-5pc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,11 +511,29 @@
             </objects>
             <point key="canvasLocation" x="1137" y="1102"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DKj-N0-yHx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mYU-nN-nxQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="awV-Rn-w6G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cR8-Uf-KfK" kind="relationship" relationship="rootViewController" id="9sa-qj-Lfs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXR-nM-eOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2507" y="1102"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SCC Logo" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xHi-XL-VIi"/>
+        <segue reference="IUU-dD-sXm"/>
     </inferredMetricsTieBreakers>
 </document>

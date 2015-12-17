@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QueueController: UITableViewController {
+class QueueController: UITableViewController, AddQueueControllerDelegate {
     
     var queue = [Queue]()
     var queueType: Int?
@@ -55,6 +55,15 @@ class QueueController: UITableViewController {
             queue.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
+        }
+    }
+    
+    // MARK - Segues
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "addQueue" {
+            let navigationController = segue.destinationViewController as! UINavigationController
+            let controller = navigationController.topViewController as! AddQueueController
+            controller.delegate = self
         }
     }
     
