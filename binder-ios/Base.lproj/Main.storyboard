@@ -180,7 +180,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="DP2-23-kBv" kind="show" id="srp-iW-0wM"/>
+                                    <segue destination="DP2-23-kBv" kind="showDetail" id="nAo-vn-jIA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

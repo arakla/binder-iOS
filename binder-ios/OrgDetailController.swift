@@ -12,6 +12,8 @@ class OrgDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("In OrgDetail ViewDid")
+        println(detailItem?.name)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -36,13 +38,16 @@ class OrgDetailController: UIViewController {
     var detailItem: Organization? {
         didSet {
             // Update the view.
+            println("In didSet")
             self.configureView()
         }
     }
     
     func configureView() {
         // Update the user interface for the detail item.
+        println("In configView")
         if let detail: Organization = self.detailItem {
+            println("In if let detail")
             if let name = self.nameLabel {
                 name.text = detail.name
             }
@@ -50,7 +55,7 @@ class OrgDetailController: UIViewController {
                 short_name.text = detail.short_name
             }
             if let status = self.statusLabel {
-                status.text = detail.status
+                status.text = "TEST STATUS"//detail.status
             }
             if let chair1 = self.chair1Label {
                 chair1.text = detail.chair1

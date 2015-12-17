@@ -34,12 +34,31 @@ class OrganizationController: UITableViewController {
     // MARK: - Segues
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = organizations[indexPath.row]
-                (segue.destinationViewController as! OrgDetailController).detailItem = object
+////        println("In prep for seg")
+////        println("Row Index, before 2xif: \(self.tableView.indexPathForSelectedRow()!.row)")
+//        if segue.identifier == "showDetail" {
+////            println("in Segue if")
+////            println("Row Index, pre if: \(self.tableView.indexPathForSelectedRow()!.row)")
+//            if let indexPath = self.tableView.indexPathForSelectedRow() {
+////                println("Row Index, in if: \(self.tableView.indexPathForSelectedRow()!.row)")
+//                let object = organizations[indexPath.row]
+//                println(object.name)
+//                (segue.destinationViewController as! OrgDetailController).detailItem = object
+//            }
+//        }
+        
+        println("In prep for seg")
+//        if segue.identifier == "showDetail" {
+            println("In show detail")
+            if let destination = segue.destinationViewController as? OrgDetailController {
+                println("In destVC \(destination.description)")
+                if let indexPathRow = tableView.indexPathForSelectedRow()?.row {
+                    println("In indexPath: \(indexPathRow)")
+                    destination.detailItem = organizations[indexPathRow]
+                }
             }
-        }
+//        }
+    
     }
     
     // MARK: - Table View

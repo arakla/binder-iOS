@@ -10,6 +10,7 @@ import Foundation
 
 class Organization {
 
+    var binder_id: Int?
     var name: String?
     var category: String?
     var short_name: String? = ""
