@@ -43,6 +43,18 @@ class OrgDetailController: UIViewController {
         }
     }
     
+    @IBAction func callButton1(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phone1Label.text)")!)
+    }
+    
+    @IBAction func callButton2(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phone2Label.text)")!)
+    }
+    
+    @IBAction func callButton3(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phone3Label.text)")!)
+    }
+    
     func configureView() {
         // Update the user interface for the detail item.
         println("In configView")
