@@ -391,7 +391,7 @@
         <!--Add to Queue-->
         <scene sceneID="Lrm-nX-swK">
             <objects>
-                <viewController id="cR8-Uf-KfK" sceneMemberID="viewController">
+                <viewController id="cR8-Uf-KfK" customClass="AddQueueController" customModule="binder_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ziy-J9-Ulr"/>
                         <viewControllerLayoutGuide type="bottom" id="9ZE-lK-pEg"/>
@@ -427,9 +427,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add to Queue" id="WtW-5m-6yk">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iTc-Gz-CNa"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dKu-Ep-Qcy"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iTc-Gz-CNa">
+                            <connections>
+                                <action selector="cancel" destination="cR8-Uf-KfK" id="Gv3-aQ-lag"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dKu-Ep-Qcy">
+                            <connections>
+                                <action selector="done" destination="cR8-Uf-KfK" id="mqW-6t-0Zd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneBarButton" destination="dKu-Ep-Qcy" id="sNs-9d-o9X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPH-Ji-92F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -52,7 +52,7 @@ class AddQueueController: UITableViewController, UIPickerViewDataSource {
         view.addSubview(pickerView)
     }
     
-    // MARK - PickerView Methods
+    // MARK - PickerView
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
